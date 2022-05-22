@@ -23,8 +23,8 @@ function install_electrumx {
 		sed -i "s/'plyvel',//" setup.py
 	fi
 	if [ "$python" != "python3" ]; then
-		sed -i "s:usr/bin/env python3:usr/bin/env python3.7:" electrumx_rpc
-		sed -i "s:usr/bin/env python3:usr/bin/env python3.7:" electrumx_server
+		sed -i "s:usr/bin/env python3:usr/bin/env python3.8:" electrumx_rpc
+		sed -i "s:usr/bin/env python3:usr/bin/env python3.8:" electrumx_server
 	fi
 	$python -m pip install . --upgrade > /dev/null 2>&1
 	if ! $python -m pip install . --upgrade; then
