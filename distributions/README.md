@@ -16,7 +16,7 @@ You need to define the following functions in your distribution file:
 The following functions also need to be defined, but you can source them from `base.sh`:
 - create_db_dir(db): Create the database directory and change ownership to the electrumx user
 - assert_pyrocksdb: Should exit if rocksdb can't be imported
-- install_pip: Install pip to Python 3.6. Only necessary if the installed version doesn't already contain pip.
+- install_pip: Install pip to Python 3.8. Only necessary if the installed version doesn't already contain pip.
 - install_electrumx: Install electrumx to `/usr/local/bin`.
 
 You can also source some functions from the `base_*.sh` files. For example, Ubuntu sources `install_init` from `base_systemd.sh`
