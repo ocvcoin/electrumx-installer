@@ -168,6 +168,8 @@ if [ $UPDATE_ONLY == 0 ] || [ $UPDATE_PYTHON == 1 ]; then
 
 	if [[ $($python -V 2>&1) == *"Python 3.8"* ]] > /dev/null 2>&1; then
 		_info "Python 3.8 is already installed."
+		packages_req="${python}-dev ${python}-distutils"
+		$APT install -y $packages_req || _error "Could not install packages ${packages_req}" 1
 	else
 		_status "Installing Python 3.8"
 		python=python3.8
