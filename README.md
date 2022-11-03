@@ -1,6 +1,6 @@
 You must install [libocv2](https://github.com/ocvcoin/ocv2_algo) on your computer before installing this!
 
-# electrumx-installer (for ubuntu 18 & ubuntu 20 only)
+# electrumx-installer (only for ubuntu 18.04 and 20.04)
 A script to automate the installation of electrumx 🤖
 
 Installing electrumx isn't really straight-forward (yet). You have to install the latest version of Python and various dependencies for
