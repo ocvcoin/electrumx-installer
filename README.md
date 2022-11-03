@@ -1,3 +1,5 @@
+You must install [libocv2](https://github.com/ocvcoin/ocv2_algo) on your computer before installing this!
+
 # electrumx-installer
 A script to automate the installation of electrumx 🤖
 
